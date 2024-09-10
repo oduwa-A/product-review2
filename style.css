@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*  Setup  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+.one, .title{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.ribbon, .paragraph, .two{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(116, 116, 116);
+}
+
+/*  Overlap Content */
+body{
+    background-color: hsl(26, 40%, 92%);
+}
+
+.main-card{
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+    margin-top: 2rem;
+}
+.text-half{
+    padding: 1.7rem;
+}
+
+.image-half img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/*  Specific Content */
+.title{
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.ribbon{
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.ribbon, .paragraph{
+    font-size: .9rem;
+    font-weight: 450;
+    line-height: 1.3rem;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 1.3rem;
+}
+
+.one{
+    color: hsl(158, 36%, 37%);
+}
+
+.two{
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.cart-button{
+    border: 0;
+    border-radius: 5px;
+    color: white; 
+    background-color: hsl(158, 36%, 37%);
+    font-family: 'Montserrat', sans-serif;
+    padding: .8rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* Breakpoint */
+@media only screen and (min-width: 1024px){
+    .main-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 35rem;
+        margin: 0 auto;
+    }
+    .text-half{
+        width: 110%;
+    }
+    .image-half img{
+        object-fit: fill;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0;
+       
+    }
+
+    .ribbon{
+        font-size: 11px;
+    }
+    .prices{
+        width: 80%;
+    }
+}
